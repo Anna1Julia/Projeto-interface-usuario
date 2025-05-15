@@ -1,9 +1,16 @@
-export default function info1v(){
+import { useState } from "react"
+export default function Info1v(){
+    let [valor, setValor] = useState(2)
+
+    function numeric(){
+        let aux = valor**9
+        setValor (aux)
+    }
 
     return(
         <>
             <div>
-                <button></button>
+                <button onClick={numeric}>Cliques {valor}</button>
             </div>
         </>
     )
