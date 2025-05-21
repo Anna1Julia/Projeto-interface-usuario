@@ -1,11 +1,19 @@
+import Props from './componentes/Props'
+import Card from './componentes/Card'
+import Children from './componentes/Children'
 import './App.css'
-import EscopoReduz from './componentes/EscopoReduz'
-import Info1v from './componentes/info1v'
+
 function App() {
+
+
   return (
     <>
-      <EscopoReduz/>
-      <Info1v/>
+      <Props nome={"React PIU"}/>
+      <Card />
+      <br />
+      <Children>
+        <Card/>
+      </Children>
     </>
   )
 }
